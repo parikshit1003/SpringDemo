@@ -1,10 +1,12 @@
 package demo2;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 public class Engine {
 
-    private String id = "0x11aa";
+    @Value("0x11aa")
+    private String id;
 
     public void setId(String arg){
         this.id = arg;
